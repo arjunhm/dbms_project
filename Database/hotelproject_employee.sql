@@ -26,9 +26,7 @@ CREATE TABLE `employee` (
   `ID` varchar(20) NOT NULL,
   `Name` varchar(45) NOT NULL,
   `Salary` varchar(45) DEFAULT NULL,
-  `Address` varchar(45) DEFAULT NULL,
   `Phone` varchar(45) DEFAULT NULL,
-  `Gender` varchar(10) NOT NULL,
   `HotelID` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   KEY `employeehotelfk_idx` (`HotelID`),
@@ -42,7 +40,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES ('E01','Abed Nadir','50000','Bangalore','9611277443','Male','H01'),('E02','Pierce Hawthorne','40000','Delji','7760416798','Male','H02'),('E03','Craig Pelton','55000','Chennai','9901111551','Male','H03'),('E04','Troy Barnes','45000','Mumbai','9663963928','Male','H04'),('E05','Jeff Winger','40000','Bangalore','9874563210','Male','H05'),('E06','Annie Edison','55000','Kolkata','9886655232','Female','H06');
+INSERT INTO `employee` VALUES ('E01','Abed Nadir','50000','9611277443','H01'),('E02','Pierce Hawthorne','40000','7760416798','H02'),('E03','Craig Pelton','55000','9901111551','H03'),('E04','Troy Barnes','45000','9663963928','H04'),('E05','Jeff Winger','40000','9874563210','H05'),('E06','Annie Edison','55000','9886655232','H06'),('E08','Harvey Specter','24000','7760416798','H01');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-22 10:32:26
+-- Dump completed on 2017-11-27 12:38:51
